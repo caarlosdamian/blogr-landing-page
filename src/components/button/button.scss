@@ -1,0 +1,37 @@
+.button {
+    cursor: pointer;
+    padding: 15px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    border-radius: 28px;
+    border: none;
+    width: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.primary {
+        color: #FF505C;
+        background: #FFFFFF;
+
+        &:hover {
+            background: #FF7B86;
+            color: white;
+        }
+    }
+
+    &.secondary {
+        background: transparent;
+        border: 1px solid #FFF;
+        color: #FFFFFF;
+
+        &:hover {
+            color: #FF7B86;
+            background: white;
+        }
+    }
+}

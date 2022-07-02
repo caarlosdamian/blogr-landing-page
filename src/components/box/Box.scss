@@ -1,0 +1,26 @@
+.box-container {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+    border-radius: 5px;
+    width: 168px;
+    height: 147px;
+    position: absolute;
+    left: 250px;
+    top: 62px;
+    padding: 24px;
+
+    .box-list-item {
+        list-style: none;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 33px;
+        color: #2D2E40;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 900;
+        }
+    }
+}
