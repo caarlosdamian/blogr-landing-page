@@ -1,0 +1,112 @@
+.navbarBox-container {
+    position: absolute;
+    width: 324px;
+    height: 511px;
+    left: 24px;
+    top: 125px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+    border-radius: 5px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .navbar-box-top_container {
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .navbarbox-item {
+            list-style: none;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+
+            .navbaritem {
+                font-family: 'Overpass';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                color: #1F3E5A;
+
+                &.active {
+                    mix-blend-mode: normal;
+                    opacity: 0.75;
+
+                }
+            }
+
+            .navbar-arrow {
+                &.active {
+                    transform: rotate(180deg);
+                    color: rgb(182, 29, 29);
+                    opacity: 2;
+                }
+            }
+        }
+
+        .options-navbox-container {
+            background: #f1f1f3;
+            mix-blend-mode: normal;
+            border-radius: 5px;
+            width: 276px;
+            height: 150px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .options-navbox {
+                font-family: 'Overpass';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+                color: #1F3E5A;
+                mix-blend-mode: normal;
+                opacity: 0.75;
+            }
+        }
+    }
+
+
+
+    .navbar-box-bottom_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        border-top: 1px solid #E8E4E4;
+        width: 276px;
+        padding: 24px;
+
+        .header-right-label {
+            font-family: 'Overpass';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #1F3E5A;
+
+        }
+    }
+
+}
