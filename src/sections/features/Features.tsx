@@ -5,11 +5,16 @@ import background2 from "../../images/illustration-editor-mobile.svg";
 import "./Features.scss";
 
 interface IProps {
+  features: IFeatures;
+}
+interface IFeatures {
   id: string;
   title?: string;
-  featueres: item[];
+  features: item[];
   mobileImg: string;
   desktopImg: string;
+  classname:string;
+  reverse?: boolean;
 }
 interface item {
   title: string;
@@ -17,19 +22,16 @@ interface item {
 }
 
 export const Features = ({
-  title,
-  featueres,
-  mobileImg,
-  desktopImg,
+  features: { id, title, features, mobileImg, desktopImg,classname ,reverse},
 }: IProps) => {
   const { width } = useWindowSize();
   return (
-    <div className="features-container">
+    <div className={`features-container ${reverse && 'reverse'|| ''}`}>
       {title && <h1 className="feature-title">{title}</h1>}
-      <div className="features-wrapper">
+      <div className={`features-wrapper ${reverse && 'reverse' || ''}`}>
         <div className="features-wrapper_left">
           <div className="features-wrapper_left-item">
-            {featueres.map((item: item) => (
+            {features.map((item: item) => (
               <>
                 <span className="features-wrapper_left-item-title">
                   {item.title}
@@ -45,7 +47,7 @@ export const Features = ({
           <img
             src={width <= 375 ? mobileImg : desktopImg}
             alt={width <= 375 ? "background2" : "background1"}
-            className="wrapper_right-img"
+            className={classname}
           />
         </div>
       </div>

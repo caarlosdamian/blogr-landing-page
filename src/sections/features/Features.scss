@@ -5,6 +5,16 @@
     padding-top: 71px;
     height: 900px;
 
+    &.reverse {
+        padding-left: 0;
+        padding-right: 165px;
+
+        @media (max-width: 375px) {
+            padding: 100px 24px;
+            height: 100%;
+        }
+    }
+
     @media (max-width: 375px) {
         padding: 100px 24px;
         height: 100%;
@@ -35,15 +45,20 @@
     .features-wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         position: relative;
         height: 100%;
         overflow: hidden;
+        gap: 125px;
+
+        &.reverse {
+            flex-direction: row-reverse;
+        }
 
         @media (max-width: 375px) {
             flex-direction: column;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
         }
 
         .features-wrapper_left {
@@ -61,6 +76,9 @@
                 flex-direction: column;
                 max-width: 540px;
                 gap: 16px;
+                @media (max-width: 375px) {
+                    align-items: center;
+                }
 
 
                 .features-wrapper_left-item-title {
@@ -115,6 +133,19 @@
         justify-content: center;
     }
 
+    .wrapper_right-img-second {
+        position: absolute;
+        left: -200px;
+        top: 100px;
+
+        @media (max-width: 375px) {
+            margin-top: 38px;
+            position: static;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
     .wrapper_right-img {
         width: 885px;
         height: 882px;
@@ -125,7 +156,7 @@
 
         @media (max-width: 375px) {
             width: 100%;
-            height: 326px;
+            height: 300px;
             margin-top: 38px;
             position: static;
         }
