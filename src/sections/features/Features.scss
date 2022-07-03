@@ -1,0 +1,133 @@
+.features-container {
+    padding-left: 165px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 71px;
+    height: 900px;
+
+    @media (max-width: 375px) {
+        padding: 100px 24px;
+        height: 100%;
+    }
+
+    .feature-title {
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 61px;
+        text-align: center;
+        letter-spacing: -1.2px;
+        color: #1F3E5A;
+
+        @media (max-width: 375px) {
+            font-family: 'Overpass';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 43px;
+            text-align: center;
+            letter-spacing: -0.84px;
+            color: #1F3E5A;
+        }
+    }
+
+    .features-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+
+        @media (max-width: 375px) {
+            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .features-wrapper_left {
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            margin-top: 93px;
+
+
+
+            .features-wrapper_left-item {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                max-width: 540px;
+                gap: 16px;
+
+
+                .features-wrapper_left-item-title {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 28px;
+                    color: #1F3E5A;
+
+                    @media (max-width: 375px) {
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #1F3E5A;
+                        max-width: 318px;
+                    }
+
+                }
+
+                .features-wrapper_left-item-text {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.5px;
+                    color: #4C5862;
+
+                    @media (max-width: 375px) {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #4C5862;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+.features-wrapper_right {
+    @media (max-width: 375px) {
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper_right-img {
+        width: 885px;
+        height: 882px;
+        position: absolute;
+        top: 0px;
+        left: 650px;
+        z-index: 9999;
+
+        @media (max-width: 375px) {
+            width: 100%;
+            height: 326px;
+            margin-top: 38px;
+            position: static;
+        }
+    }
+}

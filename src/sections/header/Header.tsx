@@ -6,7 +6,7 @@ import hamburger from "../../images/icon-hamburger.svg";
 import close from "../../images/icon-close.svg";
 import arrowdown from "../../images/icon-arrow-dark.svg";
 import background4 from "../../images/bg-pattern-circles.svg"; //tercero
-import background1 from "../../images/illustration-editor-desktop.svg"; //segundo
+ //segundo
 import background2 from "../../images/illustration-laptop-desktop.svg"; //cuarto
 import background3 from "../../images/illustration-phones.svg"; //tercero
 
@@ -15,7 +15,7 @@ import { navbarItems } from "../../utils/data";
 import { Button } from "../../components/button/Button";
 import { Box } from "../../components/box/Box";
 import { useWindowSize } from "../../hooks/useWindowsize";
-import { NavbarBox } from "../../components/navbarBox/navbarBox";
+import { NavbarBox } from "../../components/navbarBox/NavbarBox";
 
 export const Header = () => {
   const [active, setactive] = useState({ active: false, name: "" });
@@ -46,6 +46,7 @@ export const Header = () => {
                     onClick={() =>
                       setactive({ active: !active.active, name: item.name })
                     }
+                    key={Math.random()}
                   >
                     <span
                       className={`navbaritem ${
