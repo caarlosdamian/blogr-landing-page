@@ -1,5 +1,6 @@
 import "./App.scss";
 import { Features } from "./sections/features/Features";
+import { Footer } from "./sections/footer/Footer";
 import { Header } from "./sections/header/Header";
 import { Middle } from "./sections/middle/Middle";
 import { featuresOne,featuresTwo } from "./utils/data";
@@ -7,7 +8,7 @@ import { featuresOne,featuresTwo } from "./utils/data";
 function App() {
 
   return (
-    <div className="App">
+    <main className="App">
       <Header />
       <Features
        features={featuresOne}
@@ -16,7 +17,8 @@ function App() {
       <Features
        features={featuresTwo}
       />
-    </div>
+      <Footer/>
+    </main>
   );
 }
 
