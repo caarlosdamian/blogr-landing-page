@@ -4,11 +4,6 @@ import background from "../../images/bg-pattern-intro-desktop.svg";
 import arrowup from "../../images/icon-arrow-light.svg";
 import hamburger from "../../images/icon-hamburger.svg";
 import close from "../../images/icon-close.svg";
-import arrowdown from "../../images/icon-arrow-dark.svg";
-import background4 from "../../images/bg-pattern-circles.svg"; //tercero
- //segundo
-import background2 from "../../images/illustration-laptop-desktop.svg"; //cuarto
-import background3 from "../../images/illustration-phones.svg"; //tercero
 
 import "./Header.scss";
 import { navbarItems } from "../../utils/data";

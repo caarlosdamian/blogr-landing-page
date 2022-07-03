@@ -8,6 +8,7 @@
     &.reverse {
         padding-left: 0;
         padding-right: 165px;
+        z-index: 1;
 
         @media (max-width: 375px) {
             padding: 100px 24px;
@@ -29,6 +30,7 @@
         text-align: center;
         letter-spacing: -1.2px;
         color: #1F3E5A;
+   
 
         @media (max-width: 375px) {
             font-family: 'Overpass';
